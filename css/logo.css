@@ -1,0 +1,15 @@
+.logo {
+    margin-right: auto; /* 将 logo 推到左侧 */
+    margin-left: 20px; /* 左边距设置为20px */
+}
+
+/**
+ * 定义 .logo 分组内的 div 元素样式
+ * 无参数
+ * 无返回值
+ */
+.logo div {
+    width: 100px; /* 设置 logo 宽度 */
+    height: auto; /* 高度自适应，保持比例 */
+    font-size: 14px; /* 设置字体大小 */
+}

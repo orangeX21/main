@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>基础HTML模板</title>
+    <!-- 引入外部CSS文件 -->
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/top-bar.css" rel="stylesheet">
+    <link href="../css/logo.css" rel="stylesheet">
+</head>
+<body>
+<!-- 网页头部 -->
+<header>
+    <div id="logo"></div>
+    <nav aria-label="主导航">
+        <ul>
+            <li><a aria-label="首页" class="login-link" href="../index.html" title="返回首页">首页</a></li>
+            <li><a aria-label="关于页面" class="login-link" href="About_Us.html">关于</a></li>
+            <li><a aria-label="服务页面" class="login-link" href="Service.html">服务</a></li>
+            <li><a aria-label="联系我们页面" class="login-link" href="Contact_Us.html">联系我们</a></li>
+<!--            <li><a aria-label="登陆页面" class="login-link" href="login.html">登陆</a></li>-->
+        </ul>
+    </nav>
+</header>
+<hr>
+
+<!-- 主要内容区域 -->
+<main>
+    <section>
+        <!--登陆页面-->
+        <form action="../php/login.php" class="login-form" method="post">
+            <div id="top-bar">
+                <div class="input-fields">
+                    <input id="username" name="username" placeholder="用户名/Email" required type="text">
+                    <input id="password" name="password" placeholder="密码" required type="password">
+                </div>
+                <div class="buttons">
+                    <button class="login-button" type="submit">登录</button>
+                    <button class="register-button" onclick="location.href='register.html'" type="button">注册
+                        [Register]
+                    </button>
+                    <button class="forget-button" onclick="location.href='forget.html'" type="button">忘记
+                        [forget]
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+<hr>
+<!-- 网页底部 -->
+<section class="ac-gf-footer">
+    <div class="ac-gf-footer-legal">
+        <div class="ac-gf-footer-legal-copyright">Copyright
+            <span id="Copyright-Year"></span>
+            <span id="Company-Name"></span>All rights reserved.
+        </div>
+    </div>
+    <!-- 定义一个用于显示国家或地区选择的链接的容器 -->
+    <div class="ac-gf-footer-locale">
+        <!-- 这是一个链接元素，利用 `aria-label` 属性提供无障碍辅助功能支持，
+             当屏幕阅读器读取时，会读出“Choose your country or region”，
+             点击此链接将跳转至 "/choose-country-region/" 页面以便用户进行国家或地区的选择 -->
+        <a aria-label="Choose your country or region"
+           class="ac-gf-footer-locale-link"
+           data-analytics-title="choose your country"
+           href="/choose-country-region/"
+           title="Choose your country or region">United States</a>
+    </div>
+
+</section>
+
+<!-- 引入外部JavaScript文件 -->
+<script src="../js/copyright-year.js"></script>
+<script src="../js/Company-Name.js"></script>
+<script src="/js/choose-country-region.js"></script>
+
+
+</body>
+</html>

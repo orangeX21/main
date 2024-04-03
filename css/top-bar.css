@@ -1,0 +1,65 @@
+/* 定义页面顶部栏的样式 */
+#top-bar {
+    display: flex; /* 使用弹性布局 */
+    justify-content: space-between; /* 项目在主轴上均匀分布 */
+    align-items: center; /* 项目在交叉轴上居中 */
+    background: #00BFFF; /* 背景颜色 */
+    padding: 10px; /* 内边距 */
+}
+
+/* 定义输入字段的样式 */
+.input-fields {
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 项目在交叉轴上居中 */
+}
+
+/* 定义输入框的样式 */
+.input-fields input {
+    margin-right: 10px; /* 右侧外边距 */
+    padding: 8px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 19px; /* 圆角 */
+}
+
+/* 定义按钮区域的样式 */
+.buttons {
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 项目在交叉轴上居中 */
+}
+
+/* 按钮样式 */
+.feature-button,
+.login-button,
+.register-button,
+.home-button,
+.forget-button,
+.reset-button {
+    padding: 8px 16px; /* 内边距 */
+    border: none; /* 无边框 */
+    border-radius: 6px; /* 圆角 */
+    cursor: pointer; /* 鼠标指针为手型 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+/* 登录按钮样式 */
+.feature-button,
+.login-button,
+.register-button, /* 注册按钮样式，与登录按钮有相同的背景和文字颜色 */
+.forget-button,
+.home-button,
+.reset-button {
+    background-color: #007bff; /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    margin-right: 10px; /* 右侧外边距 */
+}
+
+/* 按钮悬停时的样式 */
+.feature-button:hover,
+.login-button:hover,
+.register-button:hover,
+.forget-button:hover,
+.home-button:hover,
+.reset-button:hover {
+    background-color: #0056b3; /* 背景颜色变深 */
+    border-color: #0056b3; /* 边框颜色变深 */
+}

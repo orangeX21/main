@@ -1,0 +1,1 @@
+document.querySelector('.ac-gf-footer-locale-link').textContent = "China";
