@@ -159,11 +159,6 @@ li > a.login-link:hover {
     margin: 0 5px; /* 公司名称左右两侧的外边距 */
 }
 
-/* 动态更新年份的样式（使用CSS伪元素和JavaScript来实现年份的动态更新） */
-#Copyright-Year::before {
-    content: "© "; /* 在年份前添加©符号 */
-}
-
 /* 公司名称的样式 */
 #Company-Name {
     font-weight: bold; /* 加粗 */

@@ -33,29 +33,30 @@
 </main>
 <hr>
 <!-- 网页底部 -->
+<footer>
 <section class="ac-gf-footer">
     <div class="ac-gf-footer-legal">
         <div class="ac-gf-footer-legal-copyright">Copyright
-            <span id="Copyright-Year"></span>
-            <span id="Company-Name"></span>All rights reserved.
+            &copy;
+            <!-- 使用JavaScript安全地动态插入版权年份，这里假设有一个名为updateCopyrightYear的函数负责处理 -->
+            <span id="copyright-year"></span>
+            <span id="company-name"></span> All rights reserved.
         </div>
     </div>
     <div class="ac-gf-footer-locale">
-        <!-- 这是一个链接元素，利用 `aria-label` 属性提供无障碍辅助功能支持，
-             当屏幕阅读器读取时，会读出“Choose your country or region”，
-             点击此链接将跳转至 "/choose-country-region/" 页面以便用户进行国家或地区的选择 -->
-        <a aria-label="Choose your country or region"
+        <!-- 为链接添加更独特的描述以提高可访问性 -->
+        <a aria-label="Choose your country or region unique"
            class="ac-gf-footer-locale-link"
            data-analytics-title="choose your country"
            href="/choose-country-region/"
-           title="Choose your country or region">United States</a>
+           title="Choose your country or region unique"></a>
     </div>
 </section>
-
+</footer>
 <!-- 引入外部JavaScript文件 -->
-<script src="/js/copyright-year.js"></script>
+<script src="/js/Company-Name-Year.js"></script>
 <script src="/js/choose-country-region.js"></script>
-<script src="/js/Company-Name.js"></script>
+
 
 </body>
 </html>
