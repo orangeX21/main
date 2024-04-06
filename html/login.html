@@ -17,38 +17,39 @@
     <nav aria-label="主导航">
         <ul>
             <li><a aria-label="首页" class="login-link" href="../index.html" title="返回首页">首页</a></li>
-            <li><a aria-label="关于页面" class="login-link" href="About_Us.html">关于</a></li>
             <li><a aria-label="服务页面" class="login-link" href="Service.html">服务</a></li>
-            <li><a aria-label="联系我们页面" class="login-link" href="Contact_Us.html">联系我们</a></li>
+            <li><a aria-label="关于页面" class="login-link" href="About_Us.html">关于</a></li>
+
+            <li><a aria-label="联系我们页面" class="login-link" href="Contact_Us.html">联系</a></li>
             <li><a aria-label="登陆页面" class="login-link" href="login.html">登陆</a></li>
         </ul>
     </nav>
 </header>
-<hr>
+
 <button class="languageButton" onclick="toggleLanguage()">Switch Language 切换语言</button>
 <div id="englishVersion" style="display: none;">
     <main>
         <div class="content">
             <div class="topBox">
                 <h3>Welcome</h3>
-                <h3>Welcome to Our Company</h3>
+                <h3>Welcome to <span id="company-name-en"></span></h3>
             </div>
             <div class="inputBox">
                 <div class="ipt">
-                    <h4>Phone Number</h4>
-                    <input placeholder="Please enter your phone number" type="text" value=""/>
+                    <h4>accounts</h4>
+                    <input placeholder="Please enter your accounts" type="text" value=""/>
                 </div>
                 <div class="ipt">
                     <h4>Password</h4>
                     <input placeholder="Please enter your password" type="text" value=""/>
                 </div>
                 <div class="forgetPwd">
-                    <span><a href="&nbsp;">Forgot Password</a></span>
+                    <span><a href="forget.html">Forgot Password</a></span>
                     <span><a href="&nbsp;">Don't have an account? Sign up</a></span>
                 </div>
                 <div class="buttonGroup">
                     <button class="loginBtn">Log In</button>
-                    <button class="registerBtn">Sign Up</button>
+                    <!--                    <button class="registerBtn">Sign Up</button>-->
                 </div>
                 <div class="tipbox">
                     <div class="txt">
@@ -75,24 +76,24 @@
         <div class="content">
             <div class="topBox">
                 <h3>欢迎</h3>
-                <h3>欢迎来访我们的公司</h3>
+                <h3>欢迎来访<span id="company-name-zh"></span></h3>
             </div>
             <div class="inputBox">
                 <div class="ipt">
-                    <h4>手机号</h4>
-                    <input placeholder="请输入手机号码" type="text" value=""/>
+                    <h4>账号</h4>
+                    <input placeholder="请输入账号" type="text" value=""/>
                 </div>
                 <div class="ipt">
                     <h4>密码</h4>
                     <input placeholder="请输入密码" type="text" value=""/>
                 </div>
                 <div class="forgetPwd">
-                    <span><a href="&nbsp;">忘记密码</a></span>
+                    <span><a href="forget.html">忘记密码</a></span>
                     <span><a href="&nbsp;">没有账号？去注册</a></span>
                 </div>
                 <div class="buttonGroup">
                     <button class="loginBtn">登录</button>
-                    <button class="registerBtn">注册</button>
+                    <!--                    <button class="registerBtn">注册</button>-->
                 </div>
                 <div class="tipbox">
                     <div class="txt">
@@ -128,6 +129,7 @@
         </div>
         <div class="ac-gf-footer-locale">
             <!-- 为链接添加更独特的描述以提高可访问性 -->
+            <span class="green-dot"></span>
             <a aria-label="Choose your country or region unique"
                class="ac-gf-footer-locale-link"
                data-analytics-title="choose your country"

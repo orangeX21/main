@@ -1,14 +1,14 @@
-/* 页面整体样式 */
-body {
-    font-family: Arial, sans-serif; /* 设置默认字体 */
-    background-color: #f4f4f4; /* 设置背景颜色 */
-    margin: 0; /* 去掉页面边距 */
-    padding: 0; /* 去掉页面内边距 */
-}
+/*页面整体样式*/
+/*body {*/
+/*    font-family: Arial, sans-serif; !* 设置默认字体 *!*/
+/*    background-color: #f4f4f4; !* 设置背景颜色 *!*/
+/*    margin: 0; !* 去掉页面边距 *!*/
+/*    padding: 0; !* 去掉页面内边距 *!*/
+/*}*/
 
 /* 定义内容区域的样式 */
 .content {
-    max-width: 500px; /* 设置最大宽度 */
+    max-width: 400px; /* 设置最大宽度 */
     margin: 100px auto; /* 设置居中显示及外边距 */
     background-color: #fff; /* 设置背景颜色 */
     border-radius: 8px; /* 设置圆角 */
@@ -34,6 +34,7 @@ body {
     margin-bottom: 20px; /* 添加底部外边距 */
     margin-right: 30px;
     margin-left: 20px;
+    text-align: center;
 }
 
 /* 定义输入框内部元素样式 */
@@ -45,8 +46,11 @@ body {
 .ipt h4 {
     margin: 0; /* 去掉外边距 */
     color: #666; /* 设置字体颜色 */
+    text-align: center;
 }
-
+.ipt input {
+    text-align: center;
+}
 /* 定义文本输入框样式 */
 input[type="text"] {
     width: 100%; /* 宽度占满 */
@@ -74,13 +78,22 @@ button.loginBtn, button.registerBtn {
     font-weight: bold; /* 设置加粗 */
     flex: 1; /* 弹性占满空间 */
     margin-right: 20px; /* 添加右边距 */
+    /* 设置元素的左外边距为10像素 */
     margin-left: 10px;
+
 }
 
 /* 去掉最后一个登录按钮的右边距 */
+/**
+ * 为最后一个子元素是登录按钮或注册按钮的元素设置右边距为0。
+ * 该规则适用于两种情况：
+ * 1. 当按钮是其父元素的最后一个子元素时，消除其右侧外边距。
+ * 2. 适用于`button`元素，且类名为`loginBtn`或`registerBtn`。
+ */
 button.loginBtn:last-child, button.registerBtn:last-child {
     margin-right: 0;
 }
+
 
 /* 定义忘记密码链接样式 */
 .forgetPwd {
@@ -108,38 +121,51 @@ button.loginBtn:last-child, button.registerBtn:last-child {
     margin-bottom: 10px; /* 添加底部外边距 */
 }
 
-.otherUser {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.uni-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.uni-icons span {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #666;
-}
-
-.uni-icons.oa {
-    color: rgb(66, 157, 250);
-}
-
-.uni-icons.visitor {
-    color: rgb(2, 187, 17);
-}
-
 /**
- * 定义一个语言选择按钮的样式
+ * 定义其他用户界面的样式
  * 无参数
  * 无返回值
  */
+.otherUser {
+    display: flex; /* 使用弹性布局使得子元素沿一行排列 */
+    justify-content: center; /* 子元素在行内居中对齐 */
+    margin-top: 20px; /* 与上边距保持20px的距离 */
+}
 
+/**
+ * 定义一个用于展示图标和图标文本的样式类 uni-icons。
+ * 此类样式适用于需要作为按钮或可点击区域的图标展示。
+ */
+.uni-icons {
+    display: flex; /* 使用弹性布局，使得图标和文本居中对齐 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    font-size: 18px; /* 设置字体大小为18px */
+    margin: 0 10px; /* 设置上下左右外边距为0和10px */
+    cursor: pointer; /* 鼠标指针呈手型，表示可点击 */
+}
+
+/**
+ * 为 uni-icons 类下的 span 元素定义样式，主要用于展示图标下方的文本。
+ */
+.uni-icons span {
+    margin-top: 5px; /* 设置上外边距为5px，与图标产生间距 */
+    font-size: 14px; /* 设置字体大小为14px */
+    color: #666; /* 设置字体颜色为灰色 */
+}
+
+/**
+ * 为应用了 uni-icons 类的元素添加 oa 类时，改变其颜色。
+ * 用于表示特定状态或操作的图标。
+ */
+.uni-icons.oa {
+    color: rgb(66, 157, 250); /* 设置颜色为蓝色 */
+}
+
+/**
+ * 为应用了 uni-icons 类的元素添加 visitor 类时，改变其颜色。
+ * 用于表示访客或特定类型的用户操作的图标。
+ */
+.uni-icons.visitor {
+    color: rgb(2, 187, 17); /* 设置颜色为绿色 */
+}

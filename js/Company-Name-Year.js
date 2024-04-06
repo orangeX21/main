@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // 设置公司名称（仅保留一处）
     document.getElementById("company-name").textContent = "Company Name";
     document.getElementById("logo").textContent = "Company Name";
+    document.getElementById("company-name-en").textContent = "Company Name";
+    document.getElementById("company-name-zh").textContent = "Company Name";
 
     // 更新版权年份
     function updateCopyrightYear() {
