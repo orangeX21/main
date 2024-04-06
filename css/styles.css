@@ -100,6 +100,7 @@ li > a.login-link:hover {
 
     /* 宽度设置为100%，占据其父元素的全部宽度 */
     width: 100%;
+    height: 100px;
 
     /* 设置盒模型为border-box，这样width和height属性将包含padding和border，不包括margin */
     box-sizing: border-box;
@@ -211,3 +212,21 @@ li > a.login-link:hover {
     left: 50%; /* 将小圆心的左侧与父元素的中心对齐 */
     transform: translate(-50%, -50%); /* 调整小圆心的位置，使其精确地位于小绿点的中心 */
 }
+
+#footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #ddd;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    max-width: 100%;
+    margin: 20px;
+}
+
+/*.text {*/
+/*    text-align: center;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*    color: #ddd;*/
+/*}*/

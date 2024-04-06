@@ -48,9 +48,11 @@
     color: #666; /* 设置字体颜色 */
     text-align: center;
 }
+
 .ipt input {
     text-align: center;
 }
+
 /* 定义文本输入框样式 */
 input[type="text"] {
     width: 100%; /* 宽度占满 */
