@@ -8,6 +8,7 @@
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/top-bar.css" rel="stylesheet">
     <link href="../css/logo.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
 <!-- 网页头部 -->
@@ -24,31 +25,179 @@
     </nav>
 </header>
 <hr>
+<!--<main>-->
+<!--    <div class="content">-->
+<!--        <div class="topBox">-->
+<!--            <h3>欢迎</h3>-->
+<!--            <h3>欢迎使用我们的应用</h3>-->
+<!--        </div>-->
+<!--        <div class="inputBox">-->
+<!--            <div class="ipt">-->
+<!--                <h4>手机号</h4>-->
+<!--                <input type="text" value="" placeholder="请输入手机号码" />-->
+<!--            </div>-->
+<!--            <div class="ipt">-->
+<!--                <h4>密码</h4>-->
+<!--                <input type="text" value="" placeholder="请输入密码" />-->
+<!--            </div>-->
+<!--            <div class="forgetPwd">-->
+<!--                <span><a href="&nbsp;">忘记密码</a></span>-->
+<!--                <span><a href="&nbsp;">没有账号？去注册</a></span>-->
+<!--            </div>-->
+<!--            <div class="buttonGroup">-->
+<!--                <button class="loginBtn">登录</button>-->
+<!--                <button class="registerBtn">注册</button>-->
+<!--            </div>-->
+<!--            <div class="tipbox">-->
+<!--                <div class="txt">-->
+<!--                    —— 使用其他账号登录 ——-->
+<!--                </div>-->
+<!--                <div class="otherUser">-->
+<!--                    <div class="uni-icons oa">-->
+<!--                        OA系统-->
+<!--                        <span>使用公司账号登录</span>-->
+<!--                    </div>-->
+<!--                    <div class="uni-icons visitor">-->
+<!--                        来访者登陆-->
+<!--                        <span>使用访客账号登录</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</main>-->
 
-<!-- 主要内容区域 -->
-<main>
-    <section>
-        <!--登陆页面-->
-        <form action="../php/login.php" class="login-form" method="post">
-            <div id="top-bar">
-                <div class="input-fields">
-                    <input id="username" name="username" placeholder="用户名/Email" required type="text">
-                    <input id="password" name="password" placeholder="密码" required type="password">
+<!--<main>-->
+<!--    <div class="content">-->
+<!--        <div class="topBox">-->
+<!--            <h3>Welcome</h3>-->
+<!--            <h3>Welcome to our application</h3>-->
+<!--        </div>-->
+<!--        <div class="inputBox">-->
+<!--            <div class="ipt">-->
+<!--                <h4>Phone Number</h4>-->
+<!--                <input type="text" value="" placeholder="Please enter your phone number" />-->
+<!--            </div>-->
+<!--            <div class="ipt">-->
+<!--                <h4>Password</h4>-->
+<!--                <input type="text" value="" placeholder="Please enter your password" />-->
+<!--            </div>-->
+<!--            <div class="forgetPwd">-->
+<!--                <span><a href="&nbsp;">Forgot Password</a></span>-->
+<!--                <span><a href="&nbsp;">Don't have an account? Sign up</a></span>-->
+<!--            </div>-->
+<!--            <div class="buttonGroup">-->
+<!--                <button class="loginBtn">Log In</button>-->
+<!--                <button class="registerBtn">Sign Up</button>-->
+<!--            </div>-->
+<!--            <div class="tipbox">-->
+<!--                <div class="txt">-->
+<!--                    —— Log in with other accounts ——-->
+<!--                </div>-->
+<!--                <div class="otherUser">-->
+<!--                    <div class="uni-icons oa">-->
+<!--                        Company Account-->
+<!--                        <span>Log in with your company account</span>-->
+<!--                    </div>-->
+<!--                    <div class="uni-icons visitor">-->
+<!--                        Visitor Login-->
+<!--                        <span>Log in with your visitor account</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</main>-->
+<button onclick="toggleLanguage()" class="languageButton">Switch Language 切换语言</button>
+<div id="englishVersion" style="display: none;">
+    <main>
+        <div class="content">
+            <div class="topBox">
+                <h3>Welcome</h3>
+                <h3>Welcome to Our Company</h3>
+            </div>
+            <div class="inputBox">
+                <div class="ipt">
+                    <h4>Phone Number</h4>
+                    <input type="text" value="" placeholder="Please enter your phone number" />
                 </div>
-                <div class="buttons">
-                    <button class="login-button" type="submit">登录</button>
-                    <button class="register-button" onclick="location.href='register.html'" type="button">注册
-                        [Register]
-                    </button>
-                    <button class="forget-button" onclick="location.href='forget.html'" type="button">忘记
-                        [forget]
-                    </button>
+                <div class="ipt">
+                    <h4>Password</h4>
+                    <input type="text" value="" placeholder="Please enter your password" />
+                </div>
+                <div class="forgetPwd">
+                    <span><a href="&nbsp;">Forgot Password</a></span>
+                    <span><a href="&nbsp;">Don't have an account? Sign up</a></span>
+                </div>
+                <div class="buttonGroup">
+                    <button class="loginBtn">Log In</button>
+                    <button class="registerBtn">Sign Up</button>
+                </div>
+                <div class="tipbox">
+                    <div class="txt">
+                        —— Log in with other accounts ——
+                    </div>
+                    <div class="otherUser">
+                        <div class="uni-icons oa">
+                            Company Account
+                            <span>Log in with your company account</span>
+                        </div>
+                        <div class="uni-icons visitor">
+                            Visitor Login
+                            <span>Log in with your visitor account</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
-    </section>
-</main>
-<hr>
+        </div>
+    </main>
+</div>
+
+<div id="chineseVersion" >
+    <main>
+        <div class="content">
+            <div class="topBox">
+                <h3>欢迎</h3>
+                <h3>欢迎来访我们的公司</h3>
+            </div>
+            <div class="inputBox">
+                <div class="ipt">
+                    <h4>手机号</h4>
+                    <input type="text" value="" placeholder="请输入手机号码" />
+                </div>
+                <div class="ipt">
+                    <h4>密码</h4>
+                    <input type="text" value="" placeholder="请输入密码" />
+                </div>
+                <div class="forgetPwd">
+                    <span><a href="&nbsp;">忘记密码</a></span>
+                    <span><a href="&nbsp;">没有账号？去注册</a></span>
+                </div>
+                <div class="buttonGroup">
+                    <button class="loginBtn">登录</button>
+                    <button class="registerBtn">注册</button>
+                </div>
+                <div class="tipbox">
+                    <div class="txt">
+                        —— 使用其他账号登录 ——
+                    </div>
+                    <div class="otherUser">
+                        <div class="uni-icons oa">
+                            OA系统
+                            <span>使用公司账号登录</span>
+                        </div>
+                        <div class="uni-icons visitor">
+                            来访者登陆
+                            <span>使用访客账号登录</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
 <!-- 网页底部 -->
 <footer>
 <section class="ac-gf-footer">
@@ -73,6 +222,7 @@
 <!-- 引入外部JavaScript文件 -->
 <script src="/js/Company-Name-Year.js"></script>
 <script src="/js/choose-country-region.js"></script>
+<script src="/js/Switch-Language.js"></script>
 
 
 </body>

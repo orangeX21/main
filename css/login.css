@@ -1,0 +1,159 @@
+/* 页面整体样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置默认字体 */
+    background-color: #f4f4f4; /* 设置背景颜色 */
+    margin: 0; /* 去掉页面边距 */
+    padding: 0; /* 去掉页面内边距 */
+}
+
+/* 定义内容区域的样式 */
+.content {
+    max-width: 500px; /* 设置最大宽度 */
+    margin: 100px auto; /* 设置居中显示及外边距 */
+    background-color: #fff; /* 设置背景颜色 */
+    border-radius: 8px; /* 设置圆角 */
+    padding: 20px; /* 设置内边距 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 定义顶部盒子样式 */
+.topBox {
+    text-align: center; /* 文本居中 */
+    margin-bottom: 20px; /* 添加底部外边距 */
+}
+
+/* 定义顶部盒子中的标题样式 */
+.topBox h3 {
+    margin: 0; /* 去掉外边距 */
+    font-size: 24px; /* 设置字体大小 */
+    color: #333; /* 设置字体颜色 */
+}
+
+/* 定义输入框区域样式 */
+.inputBox {
+    margin-bottom: 20px; /* 添加底部外边距 */
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+/* 定义输入框内部元素样式 */
+.ipt {
+    margin-bottom: 10px; /* 添加底部外边距 */
+}
+
+/* 定义输入框标签样式 */
+.ipt h4 {
+    margin: 0; /* 去掉外边距 */
+    color: #666; /* 设置字体颜色 */
+}
+
+/* 定义文本输入框样式 */
+input[type="text"] {
+    width: 100%; /* 宽度占满 */
+    padding: 8px; /* 内边距 */
+    border: 1px solid #ccc; /* 设置边框 */
+    border-radius: 4px; /* 设置圆角 */
+}
+
+/* 定义按钮组样式 */
+.buttonGroup {
+    display: flex; /* 启用弹性布局 */
+    justify-content: space-between; /* 项目等分间隔 */
+    margin-top: 10px; /* 添加顶部外边距 */
+}
+
+/* 定义登录和注册按钮样式 */
+button.loginBtn, button.registerBtn {
+    background-color: #007bff; /* 设置背景颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 10px; /* 设置圆角 */
+    color: #fff; /* 设置字体颜色 */
+    font-size: 16px; /* 设置字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+    padding: 8px 16px; /* 设置内边距 */
+    font-weight: bold; /* 设置加粗 */
+    flex: 1; /* 弹性占满空间 */
+    margin-right: 20px; /* 添加右边距 */
+    margin-left: 10px;
+}
+
+/* 去掉最后一个登录按钮的右边距 */
+button.loginBtn:last-child, button.registerBtn:last-child {
+    margin-right: 0;
+}
+
+/* 定义忘记密码链接样式 */
+.forgetPwd{
+    font-size: 26rpx; /* 设置字体大小 */
+    color: #b5b5b5; /* 设置字体颜色 */
+    text-align: start; /* 文本右对齐 */
+    padding:0 10rpx; /* 设置内边距 */
+    display: flex; /* 启用弹性布局 */
+    justify-content: space-between; /* 项目等分间隔 */
+}
+.forgetPwd a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* 定义提示信息盒子样式 */
+.tipbox {
+    text-align: center; /* 文本居中 */
+}
+
+/* 定义提示信息文本样式 */
+.txt {
+    color: #999; /* 设置字体颜色 */
+    margin-bottom: 10px; /* 添加底部外边距 */
+}
+.otherUser {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.uni-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.uni-icons span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.uni-icons.oa {
+    color: rgb(66, 157, 250);
+}
+
+.uni-icons.visitor {
+    color: rgb(2, 187, 17);
+}
+
+/**
+ * 定义一个语言选择按钮的样式
+ * 无参数
+ * 无返回值
+ */
+.languageButton {
+    /* 设置按钮的基本样式 */
+    background-color: #007bff; /* 按钮的背景颜色 */
+    border: none; /* 去除边框 */
+    border-radius: 5px; /* 设置圆角为5px */
+    color: #fff; /* 设置字体颜色为白色 */
+    font-size: 16px; /* 设置字体大小为16px */
+    padding: 10px 20px; /* 内边距设置，提供按钮的点击感 */
+    cursor: pointer; /* 鼠标指针经过时变成手指，指示可点击 */
+    transition: background-color 0.3s ease; /* 背景颜色的过渡效果，0.3秒内平滑变化 */
+    float: right; /* 将按钮浮动到右端，或者可以使用margin-left: auto;实现同样的效果 */
+}
+
+/* 鼠标悬停在按钮上时的样式变化 */
+.languageButton:hover {
+    background-color: #0056b3; /* 悬停时的背景颜色，比默认颜色更深 */
+}
