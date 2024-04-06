@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>关于</title>
+    <title>company-name-About_Us</title>
     <!-- 引入外部CSS文件 -->
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/top-bar.css" rel="stylesheet">
@@ -19,11 +19,12 @@
             <li><a aria-label="关于页面" class="login-link" href="About_Us.html">关于</a></li>
             <li><a aria-label="服务页面" class="login-link" href="Service.html">服务</a></li>
             <li><a aria-label="联系我们页面" class="login-link" href="Contact_Us.html">联系我们</a></li>
-<!--            <li><a aria-label="登陆页面" class="login-link" href="login.html">登陆</a></li>-->
+            <li><a aria-label="登陆页面" class="login-link" href="login.html">登陆</a></li>
         </ul>
     </nav>
 </header>
 <hr>
+<button class="languageButton" onclick="toggleLanguage()">Switch Language 切换语言</button>
 
 <!-- 主要内容区域 -->
 <main>
@@ -34,27 +35,28 @@
 <hr>
 <!-- 网页底部 -->
 <footer>
-<section class="ac-gf-footer">
-    <div class="ac-gf-footer-legal">
-        <div class="ac-gf-footer-legal-copyright">Copyright
-            &copy;
-            <!-- 使用JavaScript安全地动态插入版权年份，这里假设有一个名为updateCopyrightYear的函数负责处理 -->
-            <span id="copyright-year"></span>
-            <span id="company-name"></span> All rights reserved.
+    <section class="ac-gf-footer">
+        <div class="ac-gf-footer-legal">
+            <div class="ac-gf-footer-legal-copyright">Copyright
+                &copy;
+                <!-- 使用JavaScript安全地动态插入版权年份，这里假设有一个名为updateCopyrightYear的函数负责处理 -->
+                <span id="copyright-year"></span>
+                <span id="company-name"></span> All rights reserved.
+            </div>
         </div>
-    </div>
-    <div class="ac-gf-footer-locale">
-        <!-- 为链接添加更独特的描述以提高可访问性 -->
-        <a aria-label="Choose your country or region unique"
-           class="ac-gf-footer-locale-link"
-           data-analytics-title="choose your country"
-           href="/choose-country-region/"
-           title="Choose your country or region unique"></a>
-    </div>
-</section>
+        <div class="ac-gf-footer-locale">
+            <!-- 为链接添加更独特的描述以提高可访问性 -->
+            <a aria-label="Choose your country or region unique"
+               class="ac-gf-footer-locale-link"
+               data-analytics-title="choose your country"
+               href="/choose-country-region/"
+               title="Choose your country or region unique"></a>
+        </div>
+    </section>
 </footer>
 <!-- 引入外部JavaScript文件 -->
 <script src="/js/Company-Name-Year.js"></script>
 <script src="/js/choose-country-region.js"></script>
+<script src="/js/Switch-Language.js"></script>
 </body>
 </html>

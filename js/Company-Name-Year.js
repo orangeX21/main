@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const copyrightYearElement = document.getElementById("copyright-year");
         copyrightYearElement.textContent = new Date().getFullYear();
     }
+
     updateCopyrightYear();
 
     // 更具描述性的aria-label和title属性值

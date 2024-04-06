@@ -163,3 +163,21 @@ li > a.login-link:hover {
 #Company-Name {
     font-weight: bold; /* 加粗 */
 }
+
+.languageButton {
+    /* 设置按钮的基本样式 */
+    background-color: #007bff; /* 按钮的背景颜色 */
+    border: none; /* 去除边框 */
+    border-radius: 5px; /* 设置圆角为5px */
+    color: #fff; /* 设置字体颜色为白色 */
+    font-size: 16px; /* 设置字体大小为16px */
+    padding: 10px 20px; /* 内边距设置，提供按钮的点击感 */
+    cursor: pointer; /* 鼠标指针经过时变成手指，指示可点击 */
+    transition: background-color 0.3s ease; /* 背景颜色的过渡效果，0.3秒内平滑变化 */
+    float: right; /* 将按钮浮动到右端，或者可以使用margin-left: auto;实现同样的效果 */
+}
+
+/* 鼠标悬停在按钮上时的样式变化 */
+.languageButton:hover {
+    background-color: #0056b3; /* 悬停时的背景颜色，比默认颜色更深 */
+}

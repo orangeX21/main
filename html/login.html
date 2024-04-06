@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>基础HTML模板</title>
+    <title>company-name-login</title>
     <!-- 引入外部CSS文件 -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/top-bar.css" rel="stylesheet">
     <link href="../css/logo.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/login.css">
+    <link href="../css/login.css" rel="stylesheet">
 </head>
 <body>
 <!-- 网页头部 -->
@@ -20,7 +20,7 @@
             <li><a aria-label="关于页面" class="login-link" href="About_Us.html">关于</a></li>
             <li><a aria-label="服务页面" class="login-link" href="Service.html">服务</a></li>
             <li><a aria-label="联系我们页面" class="login-link" href="Contact_Us.html">联系我们</a></li>
-<!--            <li><a aria-label="登陆页面" class="login-link" href="login.html">登陆</a></li>-->
+            <li><a aria-label="登陆页面" class="login-link" href="login.html">登陆</a></li>
         </ul>
     </nav>
 </header>
@@ -108,7 +108,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</main>-->
-<button onclick="toggleLanguage()" class="languageButton">Switch Language 切换语言</button>
+<button class="languageButton" onclick="toggleLanguage()">Switch Language 切换语言</button>
 <div id="englishVersion" style="display: none;">
     <main>
         <div class="content">
@@ -119,11 +119,11 @@
             <div class="inputBox">
                 <div class="ipt">
                     <h4>Phone Number</h4>
-                    <input type="text" value="" placeholder="Please enter your phone number" />
+                    <input placeholder="Please enter your phone number" type="text" value=""/>
                 </div>
                 <div class="ipt">
                     <h4>Password</h4>
-                    <input type="text" value="" placeholder="Please enter your password" />
+                    <input placeholder="Please enter your password" type="text" value=""/>
                 </div>
                 <div class="forgetPwd">
                     <span><a href="&nbsp;">Forgot Password</a></span>
@@ -153,7 +153,7 @@
     </main>
 </div>
 
-<div id="chineseVersion" >
+<div id="chineseVersion">
     <main>
         <div class="content">
             <div class="topBox">
@@ -163,11 +163,11 @@
             <div class="inputBox">
                 <div class="ipt">
                     <h4>手机号</h4>
-                    <input type="text" value="" placeholder="请输入手机号码" />
+                    <input placeholder="请输入手机号码" type="text" value=""/>
                 </div>
                 <div class="ipt">
                     <h4>密码</h4>
-                    <input type="text" value="" placeholder="请输入密码" />
+                    <input placeholder="请输入密码" type="text" value=""/>
                 </div>
                 <div class="forgetPwd">
                     <span><a href="&nbsp;">忘记密码</a></span>
@@ -200,24 +200,24 @@
 
 <!-- 网页底部 -->
 <footer>
-<section class="ac-gf-footer">
-    <div class="ac-gf-footer-legal">
-        <div class="ac-gf-footer-legal-copyright">Copyright
-            &copy;
-            <!-- 使用JavaScript安全地动态插入版权年份，这里假设有一个名为updateCopyrightYear的函数负责处理 -->
-            <span id="copyright-year"></span>
-            <span id="company-name"></span> All rights reserved.
+    <section class="ac-gf-footer">
+        <div class="ac-gf-footer-legal">
+            <div class="ac-gf-footer-legal-copyright">Copyright
+                &copy;
+                <!-- 使用JavaScript安全地动态插入版权年份，这里假设有一个名为updateCopyrightYear的函数负责处理 -->
+                <span id="copyright-year"></span>
+                <span id="company-name"></span> All rights reserved.
+            </div>
         </div>
-    </div>
-    <div class="ac-gf-footer-locale">
-        <!-- 为链接添加更独特的描述以提高可访问性 -->
-        <a aria-label="Choose your country or region unique"
-           class="ac-gf-footer-locale-link"
-           data-analytics-title="choose your country"
-           href="/choose-country-region/"
-           title="Choose your country or region unique"></a>
-    </div>
-</section>
+        <div class="ac-gf-footer-locale">
+            <!-- 为链接添加更独特的描述以提高可访问性 -->
+            <a aria-label="Choose your country or region unique"
+               class="ac-gf-footer-locale-link"
+               data-analytics-title="choose your country"
+               href="/choose-country-region/"
+               title="Choose your country or region unique"></a>
+        </div>
+    </section>
 </footer>
 <!-- 引入外部JavaScript文件 -->
 <script src="/js/Company-Name-Year.js"></script>
