@@ -1,0 +1,4 @@
+document.querySelector('#chineseText2').textContent = "致力于普及***，推进***规模部署和应用，以全面推进***技术创新与融合应用为主线，以提升应用广度深度为主攻方向";
+document.querySelector('#englishText2').textContent = "Committed to promoting ***, advancing the large-scale deployment and application of ***, with comprehensive promotion of *** technology innovation and integration application as the main line, and improving application breadth and depth as the main attack direction";
+// document.querySelector('#chineseText1').textContent = "致力于普及***，推进***规模部署和应用，以全面推进***技术创新与融合应用为主线，以提升应用广度深度为主攻方向";
+// document.querySelector('#englishText1').textContent = "Committed to promoting ***, advancing the large-scale deployment and application of ***, with comprehensive promotion of *** technology innovation and integration application as the main line, and improving application breadth and depth as the main attack direction";

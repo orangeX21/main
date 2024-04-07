@@ -1,0 +1,35 @@
+/* 定义一个aside元素的样式，用作侧边栏 */
+/* 定义一个aside元素的样式，用作侧边栏 */
+aside {
+    width: 200px; /* 设置侧边栏宽度为200px */
+    height: 100%; /* 设置侧边栏高度为100%，占据整个页面高度 */
+    background-color: #fff; /* 设置背景颜色为白色 */
+    position: fixed; /* 设置定位方式为固定定位 */
+    top: 0; /* 定位侧边栏顶部距离页面顶部0px */
+    left: 0; /* 定位侧边栏左侧距离页面左侧0px */
+    z-index: 100; /* 设置z轴顺序为100，确保侧边栏在其他元素之上 */
+    overflow: hidden; /* 隐藏侧边栏内容溢出 */
+    transition: all 0.3s; /* 设置所有属性过渡效果为0.3秒 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 设置盒子阴影 */
+    border-right: 1px solid #eaeaea; /* 设置右侧边框为1px，颜色为淡灰色 */
+}
+/* 为aside下的li元素设置样式，主要作用是提供一个具有交互效果的列表项。 */
+aside li {
+     list-style: none; /* 移除列表项的默认样式 */
+     padding: 10px; /* 内边距增加，提供舒适的视觉感受 */
+     margin: 10px; /* 外边距增加，使列表项之间产生间距 */
+     border-radius: 5px; /* 圆角边框，提升视觉效果 */
+     cursor: pointer; /* 鼠标指针呈手型，暗示可点击 */
+     transition: all 0.3s; /* 添加过渡效果，使样式变化更加平滑 */
+     background-color: #f5f5f5; /* 设置背景颜色，提高可读性 */
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果，增加深度感 */
+     text-align: center; /* 文本居中显示，增强视觉美感 */
+     font-size: 14px; /* 设置字体大小，保证文本清晰可读 */
+     color: #333; /* 设置字体颜色，确保文本与背景的对比度 */
+     font-weight: bold; /* 加粗字体，突出重要性 */
+     text-decoration: none; /* 移除文本装饰，保持简洁 */
+     display: block; /* 将列表项显示为块级元素，占据整行空间 */
+     width: 100%; /* 设置宽度为100%，确保列表项充满其容器 */
+     height: 100%; /* 设置高度为100%，使列表项高度与其容器相等 */
+     line-height: 40px; /* 设置行高，使单行文本居中显示 */
+ }

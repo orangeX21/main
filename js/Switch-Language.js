@@ -96,20 +96,20 @@ function toggleLanguage() {
         chineseVersion.style.display = 'block';
     }
 
-    var textContainer = document.getElementById('textContainer');
-
-    if (textContainer.innerHTML.includes("请遵守中国法律法规")) {
-        textContainer.innerHTML = `
-            <a class="text">Please comply with Chinese laws and regulations</a>
-            <hr>
-            <a class="text">Committed to promoting ***, advancing *** scale deployment and application, with proportate *** technology innovation and integration application as the main line, to enhance the breadth and depth of application as the main direction of attack</a>
-        `;
-    } else {
-        textContainer.innerHTML = `
-            <a class="text">请遵守中国法律法规</a>
-            <hr>
-            <a class="text">致力于普及***，推进***规模部署和应用，以 proportate***技术创新与融合应用为主线，以提升应用广度深度为主攻方向</a>
-        `;
-    }
+    // var textContainer = document.getElementById('textContainer');
+    //
+    // if (textContainer.innerHTML.includes("请遵守中国法律法规")) {
+    //     textContainer.innerHTML = `
+    //         <a class="text">Please comply with Chinese laws and regulations</a>
+    //         <hr>
+    //         <a class="text">Committed to promoting ***, advancing *** scale deployment and application, with proportate *** technology innovation and integration application as the main line, to enhance the breadth and depth of application as the main direction of attack</a>
+    //     `;
+    // } else {
+    //     textContainer.innerHTML = `
+    //         <a class="text">请遵守中国法律法规</a>
+    //         <hr>
+    //         <a class="text">致力于普及***，推进***规模部署和应用，以 proportate***技术创新与融合应用为主线，以提升应用广度深度为主攻方向</a>
+    //     `;
+    // }
 
 }
