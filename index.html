@@ -8,7 +8,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/top-bar.css" rel="stylesheet">
     <link href="css/logo.css" rel="stylesheet">
-<!--    <link href="css/index-main-aside-aeticle.css" rel="stylesheet">-->
+        <link href="css/index-main-aside-aeticle.css" rel="stylesheet">
 </head>
 <body>
 <!-- 网页头部 -->
@@ -28,34 +28,66 @@
 </header>
 
 <button class="languageButton" onclick="toggleLanguage()">Switch Language 切换语言</button>
-<!-- 主要内容区域 -->
+
+
+<!-- 主要内容区域开始 -->
 <main>
     <section>
-        <aside>
-            <div>
-                <ul>
-                    <li>
-                        <a>123</a>
-                    </li>
-                    <li>
-                        <a>456</a>
-                    </li>
-                    <li>
-                        <a>789</a>
-                    </li>
-                    <li>
-                        <a>012</a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        <!-- 顶部横幅区域，具有自动宽度 -->
+        <div class="banner" style="background-image: url('#');">
+            <br><br><br><br>
+            <h1><span id="banner-text-company-name">OLF</span>工作室</h1>
+            <h2>广度深度为主攻方向</h2>
+            <p>以尊重收获理解，以责任收获支持，以谦卑收获成长的行为观向客户提供全面优质的互联网应用服务。</p>
+        </div>
     </section>
     <section>
-        <article>
-
-        </article>
+        <!-- 服务或产品展示表格 -->
+        <table>
+            <tr>
+                <!-- 表格第一行，展示三个服务或产品 -->
+                <td class="table-img">
+                    <a><img src="#" alt=""></a><p>1234</p></td>
+                <td class="table-img">
+                    <a><img src="#" alt=""></a><p>1234</p></td>
+                <td class="table-img">
+                    <a><img src="#" alt=""></a><p>1234</p></td>
+            </tr>
+            <tr>
+                <!-- 表格第二行，同样展示三个服务或产品 -->
+                <td class="table-img">
+                    <a><img src="#" alt=""></a><p>1234</p></td>
+                <td class="table-img">
+                    <a><img src="#" alt=""></a><p>1234</p></td>
+                <td class="table-img">
+                    <a><img src="#" alt=""></a><p>1234</p></td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td class="table-text">
+                    <div>
+                        <p>
+                            AG视频解析是一款可以在线解析m3u8视频工具，可以解析腾讯视频、爱奇艺、优酷、芒果TV、搜狐视频、B站、乐视、央视、PPTV、YouTube。加载会员cookie可以解析VIP视频，利用文件夹内的mpv可以直接播放，或者利用m3u8下载器可以下载为mp4
+                        </p>
+                    </div>
+                </td>
+                <td class="table-text">
+                    <div>
+                        <p>
+                            AG视频解析是一款可以在线解析m3u8视频工具，可以解析腾讯视频、爱奇艺、优酷、芒果TV、搜狐视频、B站、乐视、央视、PPTV、YouTube。加载会员cookie可以解析VIP视频，利用文件夹内的mpv可以直接播放，或者利用m3u8下载器可以下载为mp4
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </section>
 </main>
+<!-- 主要内容区域结束 -->
+
+
 
 <!-- 网页底部 -->
 <footer>
@@ -86,7 +118,10 @@
     </span>
 </div>
         </span>
-        <span id="SSL-SVG"><a href="https://ipw.cn/ssl/?site=www.i-free.link" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a></span>
+        <span id="SSL-SVG"><a href="https://ipw.cn/ssl/?site=www.i-free.link" target='_blank'
+                              title="本站支持SSL安全访问"><img alt="本站支持SSL安全访问"
+                                                   src="https://static.ipw.cn/icon/ssl-s1.svg"
+                                                   style='display:inline-block;vertical-align:middle'></a></span>
         <div class="ac-gf-footer-locale">
             <!-- 为链接添加更独特的描述以提高可访问性 -->
             <span class="green-dot"></span>

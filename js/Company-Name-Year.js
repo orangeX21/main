@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("logo").textContent = "Company Name";
     document.getElementById("company-name-en").textContent = "Company Name";
     document.getElementById("company-name-zh").textContent = "Company Name";
-
     // 更新版权年份
     function updateCopyrightYear() {
         const copyrightYearElement = document.getElementById("copyright-year");

@@ -1,35 +1,116 @@
-/* 定义一个aside元素的样式，用作侧边栏 */
-/* 定义一个aside元素的样式，用作侧边栏 */
-aside {
-    width: 200px; /* 设置侧边栏宽度为200px */
-    height: 100%; /* 设置侧边栏高度为100%，占据整个页面高度 */
-    background-color: #fff; /* 设置背景颜色为白色 */
-    position: fixed; /* 设置定位方式为固定定位 */
-    top: 0; /* 定位侧边栏顶部距离页面顶部0px */
-    left: 0; /* 定位侧边栏左侧距离页面左侧0px */
-    z-index: 100; /* 设置z轴顺序为100，确保侧边栏在其他元素之上 */
-    overflow: hidden; /* 隐藏侧边栏内容溢出 */
-    transition: all 0.3s; /* 设置所有属性过渡效果为0.3秒 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 设置盒子阴影 */
-    border-right: 1px solid #eaeaea; /* 设置右侧边框为1px，颜色为淡灰色 */
+/**
+ * 定义一个名为 banner 的样式类
+ * 用于网站或应用中的横幅区域的样式设定。
+ * 无参数
+ * 无返回值
+ */
+/**/
+.banner {
+    width: auto; /* 横幅宽度充满整个父元素 */
+    padding: 20px; /* 为横幅添加内部间距 */
+    text-align: center; /* 使横幅内的文本居中对齐 */
+    color: white; /* 设置横幅内文本的颜色为白色 */
+    border: 1px solid #ccc; /* 为横幅添加边框 */
+    margin: 0; /* 移除默认边距 */
+    height: 65vh; /* 设置 body 的高度为视口的100% */
+    background-size: cover; /* 背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
 }
-/* 为aside下的li元素设置样式，主要作用是提供一个具有交互效果的列表项。 */
-aside li {
-     list-style: none; /* 移除列表项的默认样式 */
-     padding: 10px; /* 内边距增加，提供舒适的视觉感受 */
-     margin: 10px; /* 外边距增加，使列表项之间产生间距 */
-     border-radius: 5px; /* 圆角边框，提升视觉效果 */
-     cursor: pointer; /* 鼠标指针呈手型，暗示可点击 */
-     transition: all 0.3s; /* 添加过渡效果，使样式变化更加平滑 */
-     background-color: #f5f5f5; /* 设置背景颜色，提高可读性 */
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果，增加深度感 */
-     text-align: center; /* 文本居中显示，增强视觉美感 */
-     font-size: 14px; /* 设置字体大小，保证文本清晰可读 */
-     color: #333; /* 设置字体颜色，确保文本与背景的对比度 */
-     font-weight: bold; /* 加粗字体，突出重要性 */
-     text-decoration: none; /* 移除文本装饰，保持简洁 */
-     display: block; /* 将列表项显示为块级元素，占据整行空间 */
-     width: 100%; /* 设置宽度为100%，确保列表项充满其容器 */
-     height: 100%; /* 设置高度为100%，使列表项高度与其容器相等 */
-     line-height: 40px; /* 设置行高，使单行文本居中显示 */
- }
+
+.banner h1 {
+    font-size: 36px; /* 设置横幅内h1标题的字体大小为36像素 */
+}
+
+.banner h2 {
+    font-size: 28px; /* 设置横幅内h2标题的字体大小为24像素 */
+}
+/* 定义横幅内段落文本的样式 */
+.banner p {
+    font-size: 20px; /* 设置横幅内段落文本的字体大小为20像素 */
+}
+#banner-text-company-name {
+    font-size: 72px;
+    color: #5cb85c;
+    font-weight: normal;
+}
+/**
+ * 定义表格的样式
+ * 无参数
+ * 无返回值
+ */
+table {
+    width: 100%; /* 设置表格宽度为100% */
+    border-collapse: collapse; /* 合并表格边框 */
+    border: 1px solid #ccc; /* 设置表格边框为1px的灰色实线边框 */
+    margin-bottom: 20px; /* 设置表格底部外边距为20px */
+    margin-top: 20px; /* 设置表格顶部外边距为20px */
+    background-color: #f9f9f9; /* 设置表格背景色为淡灰色 */
+    border-radius: 5px; /* 设置表格边框圆角为5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置表格的阴影效果 */
+    overflow: hidden; /* 隐藏表格溢出内容 */
+    box-sizing: border-box; /* 设置元素大小包含边框和内边距 */
+    transition: all 0.3s ease; /* 添加过渡效果，使样式变化更加平滑 */
+    cursor: pointer; /* 设置鼠标指针为手型，表示可点击 */
+    user-select: none; /* 阻止用户选择表格内容 */
+}
+/**
+ * 定义表格表头的样式
+ * 无参数
+ * 无返回值
+ */
+/* 定义表格表头的样式 */
+/**
+ * 定义一个表格图片的样式
+ * 无参数
+ * 无返回值
+ */
+/**
+ * 为表格中的图片设置样式
+ */
+.table-img img{
+    width: 50px; /* 设置图片宽度为50px */
+    height: 50px; /* 设置图片高度为50px */
+    margin: 0 0 0; /* 垂直居中对齐 */
+    border: 1px solid #ccc; /* 添加1px灰色边框 */
+    border-radius: 5px; /* 应用5px圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加一个轻量的阴影效果 */
+    transition: all 0.3s ease; /* 添加过渡效果，使样式变化更加平滑 */
+    cursor: pointer; /* 将鼠标指针改为指针形状，指示可以点击 */
+    user-select: none; /* 阻止用户选择图片内容 */
+    box-sizing: border-box; /* 保证边框和内边距不会影响元素的总宽度 */
+}
+.table-img {
+    text-align: center; /* 设置表格内文本居中对齐 */
+    font-size: 16px; /* 设置表格内字体大小为16px */
+    font-weight: normal; /* 设置字体权重为正常 */
+    color: #333; /* 设置文本颜色为深灰色 */
+}
+
+/**
+ * .table-text 类定义了表格内文本的样式，确保文本居左显示，且具备一定的样式控制，如字体大小、颜色、内边距等。
+ * 它通过 flex 布局确保文本在单元格中居中对齐，并且支持文本溢出时显示省略号。
+ */
+.table-text {
+    /* 文本对齐方式设置为左对齐 */
+    text-align: left;
+    /* 设置字体大小为16px */
+    font-size: 16px;
+    /* 字体重量设置为正常 */
+    font-weight: normal;
+    /* 文本颜色设置为深灰色 */
+    color: #333;
+    /* 设置内边距为左右10px */
+    padding: 0 10px;
+    /* 确保边框包含在指定的宽度和高度内 */
+    box-sizing: border-box;
+    /* 隐藏溢出的内容 */
+    overflow: hidden;
+    /*!* 当内容溢出时显示省略号 *!*/
+    text-overflow: ellipsis;
+    /*!* 禁止文本换行 *!*/
+    /*white-space: nowrap;*/
+    /* 宽度和高度都设置为100%，以填满整个单元格 */
+    width: 50%;
+    height: 100%;
+}

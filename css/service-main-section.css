@@ -1,0 +1,15 @@
+table {
+    width: 100%; /* 设置表格宽度为100% */
+    border-collapse: collapse; /* 合并表格边框 */
+    border: 1px solid #ccc; /* 设置表格边框为1px的灰色实线边框 */
+    margin-bottom: 20px; /* 设置表格底部外边距为20px */
+    margin-top: 20px; /* 设置表格顶部外边距为20px */
+    background-color: #f9f9f9; /* 设置表格背景色为淡灰色 */
+    border-radius: 5px; /* 设置表格边框圆角为5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置表格的阴影效果 */
+    overflow: hidden; /* 隐藏表格溢出内容 */
+    box-sizing: border-box; /* 设置元素大小包含边框和内边距 */
+    transition: all 0.3s ease; /* 添加过渡效果，使样式变化更加平滑 */
+    cursor: pointer; /* 设置鼠标指针为手型，表示可点击 */
+    user-select: none; /* 阻止用户选择表格内容 */
+}
